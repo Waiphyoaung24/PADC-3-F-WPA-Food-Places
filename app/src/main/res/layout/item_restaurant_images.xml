@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xyz.waiphyoag.padc_3_f_wpa_burpple_food_places.viewitems.ImageViewItem xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/iv_restaurant_images"
+        android:src="@drawable/img_dummy_food"
+        android:scaleType="centerCrop"
+        android:foreground="@android:drawable/screen_background_dark_transparent"
+        />
+
+</xyz.waiphyoag.padc_3_f_wpa_burpple_food_places.viewitems.ImageViewItem>

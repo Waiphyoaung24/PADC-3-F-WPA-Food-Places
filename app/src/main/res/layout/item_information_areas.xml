@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="4dp"
+    android:layout_margin="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="Newly Opened"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/primary"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:id="@+id/tv_headline"
+            android:layout_marginRight="15dp"
+            />
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/img_nearby_shop1"
+            android:layout_below="@id/tv_headline"
+            android:layout_marginLeft="26dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/iv_shop1"
+            android:background="@drawable/rounded_button"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/iv_shop1"
+            android:layout_below="@id/tv_headline"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/tv_shop_name"
+            android:text="Uncle Tetsu"
+            android:textSize="13sp"
+            android:textColor="@color/primary_text"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/iv_shop1"
+            android:layout_below="@id/tv_shop_name"
+            android:text="Far Away"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/tv_shop_status"
+            android:textColor="@color/primary_text"
+            android:textSize="10sp"
+            android:alpha="0.5"
+            />
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/img_nearby_shop2"
+            android:layout_below="@id/iv_shop1"
+            android:layout_marginLeft="26dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/iv_shop2"
+            android:background="@drawable/rounded_button"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/iv_shop1"
+            android:layout_below="@id/tv_shop_status"
+            android:layout_marginTop="26dp"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/tv_shop_name2"
+            android:text="Sushi Tei"
+            android:textSize="13sp"
+            android:textColor="@color/primary_text"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/iv_shop1"
+            android:layout_below="@id/tv_shop_name2"
+            android:text="Far Away"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/tv_shop_status2"
+            android:textColor="@color/primary_text"
+            android:textSize="10sp"
+            android:alpha="0.5"
+            />
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/img_nearby_shop3"
+            android:layout_below="@id/iv_shop2"
+            android:layout_marginLeft="26dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/iv_shop3"
+            android:background="@drawable/rounded_button"
+            android:layout_marginBottom="8dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/iv_shop1"
+            android:layout_below="@id/tv_shop_status2"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/tv_shop_name3"
+            android:text="Excellent"
+            android:textSize="13sp"
+            android:textColor="@color/primary_text"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/iv_shop1"
+            android:layout_below="@id/tv_shop_name3"
+            android:text="Far Away"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/primary_text"
+            android:textSize="10sp"
+            android:alpha="0.5"
+
+            />
+        <View
+            android:layout_width="160dp"
+            android:id="@+id/v_View2"
+            android:layout_height="1dp"
+            android:background="#000"
+            android:alpha="0.2"
+            android:layout_below="@id/iv_shop3"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Explore"
+            android:layout_below="@id/v_View2"
+            android:textSize="20sp"
+            android:textColor="@color/black_full"
+            android:paddingLeft="12dp"
+            android:paddingBottom="4dp"
+            android:alpha="0.5"/>
+
+
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

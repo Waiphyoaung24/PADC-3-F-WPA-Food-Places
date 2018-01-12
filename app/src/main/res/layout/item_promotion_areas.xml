@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="4dp"   >
+    
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img_promotion_foods"
+            android:scaleType="centerCrop"
+            android:alpha="0.8"
+            android:id="@+id/iv_promoted_food"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_button"
+            android:text="BURPPLE EXCLUSIVE"
+            android:textColor="@color/white_full"
+            android:padding="8dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            />
+        <TextView
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:text="1 For 1 Chicken And Rice"
+            android:textColor="@color/white_full"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="70dp"
+            />
+        <View
+            android:layout_width="250dp"
+            android:layout_height="1dp"
+            android:layout_marginLeft="18dp"
+            android:background="@color/white_full"
+            android:layout_marginTop="130dp"
+            android:id="@+id/v_view"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TILL 31st JAN'18"
+            android:textColor="@color/white_full"
+            android:layout_below="@id/v_view"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="8dp"
+            />
+        <LinearLayout
+            android:layout_width="256dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/iv_promoted_food"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tokyo Sakura"
+                android:paddingTop="2dp"
+                android:textColor="@color/white_full"
+                android:paddingLeft="18dp"
+                android:background="@color/accent"
+                android:alpha="0.8"
+                android:id="@+id/tv_restaurant_address"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Kent Ridge"
+                android:alpha="0.8"
+                android:paddingTop="2dp"
+                android:textColor="@color/white_full"
+                android:paddingLeft="18dp"
+                android:background="@color/accent"/>
+
+        </LinearLayout>
+
+
+
+        
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>
