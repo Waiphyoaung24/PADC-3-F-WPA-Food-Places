@@ -1,16 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xyz.waiphyoag.padc_3_f_wpa_burpple_food_places.viewitems.ImageViewItem xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    >
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/iv_restaurant_images"
-        android:src="@drawable/img_dummy_food"
-        android:scaleType="centerCrop"
-        android:foreground="@android:drawable/screen_background_dark_transparent"
-        />
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_restaurant_images"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:foreground="@android:drawable/screen_background_dark_transparent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_dummy_food" />
+
+        <TextView
+            android:id="@+id/tv_featured_text_short"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@android:color/background_dark"
+            android:fontFamily="serif-monospace"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:text="Featured"
+            android:textAllCaps="true"
+            android:textColor="@color/primary"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_featured_highlight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif-monospace"
+            android:layout_below="@id/tv_featured_text_short"
+            android:layout_marginTop="170dp"
+            android:layout_marginLeft="40dp"
+            android:text="Hawker Highlights"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textColor="@color/white_full"
+            android:textSize="30sp"
+
+
+            />
+    </RelativeLayout>
 
 </xyz.waiphyoag.padc_3_f_wpa_burpple_food_places.viewitems.ImageViewItem>

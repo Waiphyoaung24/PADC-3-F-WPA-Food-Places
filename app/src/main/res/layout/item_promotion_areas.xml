@@ -31,6 +31,7 @@
             android:text="1 For 1 Chicken And Rice"
             android:textColor="@color/white_full"
             android:textSize="20sp"
+            android:id="@+id/tv_promotion_title"
             android:textStyle="bold"
             android:layout_marginLeft="30dp"
             android:layout_marginTop="70dp"
@@ -50,6 +51,7 @@
             android:layout_below="@id/v_view"
             android:layout_marginLeft="18dp"
             android:layout_marginTop="8dp"
+            android:id="@+id/tv_promotion_until"
             />
         <LinearLayout
             android:layout_width="256dp"
@@ -65,12 +67,13 @@
                 android:paddingLeft="18dp"
                 android:background="@color/accent"
                 android:alpha="0.8"
-                android:id="@+id/tv_restaurant_address"/>
+                android:id="@+id/tv_restaurant_promotion_address"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="Kent Ridge"
                 android:alpha="0.8"
+                android:id="@+id/tv_promotion_restaurant_name"
                 android:paddingTop="2dp"
                 android:textColor="@color/white_full"
                 android:paddingLeft="18dp"

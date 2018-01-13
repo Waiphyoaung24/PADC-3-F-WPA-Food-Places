@@ -6,8 +6,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.Window;
 import android.view.WindowManager;
+
+import org.greenrobot.eventbus.EventBus;
+import org.greenrobot.eventbus.Subscribe;
+import org.greenrobot.eventbus.ThreadMode;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -15,6 +20,8 @@ import xyz.waiphyoag.padc_3_f_wpa_burpple_food_places.Adapters.BurppleGuideAdapt
 import xyz.waiphyoag.padc_3_f_wpa_burpple_food_places.Adapters.ImageInRestaurantDetailAdapter;
 import xyz.waiphyoag.padc_3_f_wpa_burpple_food_places.Adapters.InformationAreaAdapter;
 import xyz.waiphyoag.padc_3_f_wpa_burpple_food_places.Adapters.PromotionAreaAdapter;
+import xyz.waiphyoag.padc_3_f_wpa_burpple_food_places.Data.vo.Model.FoodsModel;
+import xyz.waiphyoag.padc_3_f_wpa_burpple_food_places.Event.LoadPromotionEvent;
 
 public class MainActivity extends AppCompatActivity {
     @BindView(R.id.vp_restaurant_images)
@@ -32,6 +39,18 @@ public class MainActivity extends AppCompatActivity {
     private PromotionAreaAdapter promotionAreaAdapter;
     private BurppleGuideAdapter burppleGuideAdapter;
     private InformationAreaAdapter informationAreaAdapter;
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        EventBus.getDefault().unregister(this);
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        EventBus.getDefault().register(this);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,6 +80,14 @@ public class MainActivity extends AppCompatActivity {
         rvInformationAreas.setAdapter(informationAreaAdapter);
         rvInformationAreas.setLayoutManager(linearLayoutManagerforInformation);
 
+        FoodsModel.getsObjinstance().loadfoods();
 
+
+    }
+    @Subscribe(threadMode = ThreadMode.MAIN)
+    public void onPromotionLoad(LoadPromotionEvent event)
+    {
+        Log.d(BurppleFoodApp.LOG_TAG,"onPromotionPlacesLoad"+event.getPromotions().size());
+        promotionAreaAdapter.setFoods(event.getPromotions());
     }
 }
