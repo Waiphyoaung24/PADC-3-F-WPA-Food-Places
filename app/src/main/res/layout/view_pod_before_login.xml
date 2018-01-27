@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xyz.waiphyoag.padc_3_f_wpa_burpple_food_places.viewpods.BeforeLoginUserViewPod xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/navigation_background_height">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:foreground="@android:drawable/screen_background_dark_transparent"
+        android:src="@drawable/img_navigation_background"
+
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="To Login"
+        android:id="@+id/btn_login"
+        style="@style/accent_button"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="80dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/rounded_button"
+        android:textAllCaps="false"
+
+
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="To Register"
+        style="@style/accent_button"
+        android:id="@+id/btn_to_register"
+        android:layout_alignLeft="@+id/btn_login"
+        android:textAllCaps="false"
+        android:background="@drawable/rounded_button"
+        android:layout_marginTop="130dp"
+
+        />
+
+</xyz.waiphyoag.padc_3_f_wpa_burpple_food_places.viewpods.BeforeLoginUserViewPod>

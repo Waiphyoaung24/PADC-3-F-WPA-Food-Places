@@ -9,49 +9,30 @@ import java.util.List;
  */
 
 public class GetGuidedVO {
-    @SerializedName("burpple-promotion-id")
-    private String burpplepromotionID;
-    @SerializedName("burpple-promotion-image")
-    private String burpplepromotionImage;
-    @SerializedName("burpple-promotion-title")
-    private String burpplepromotionTitle;
-    @SerializedName("burpple-promotion-until")
-    private String burpplepromotionUntil;
-    @SerializedName("is-burpple-exclusive")
-    private Boolean isburppleExclusive;
-    @SerializedName("burpple-promotion-terms")
-    private List<String> burpplepromotionTerm;
-    private BurpplePromotionShopVO burpplePromotionShop;
+    @SerializedName("burpple-guide-id")
+    private String burppleguideID;
+    @SerializedName("burpple-guide-image")
+    private String burppleguideImage;
+    @SerializedName("burpple-guide-title")
+    private String burppleguideTitle;
+    @SerializedName("burpple-guide-desc")
+    private  String burppleguideDesc;
 
-    public String getBurpplepromotionID() {
-        return burpplepromotionID;
+    public String getBurppleguideID() {
+        return burppleguideID;
     }
 
-    public String getBurpplepromotionImage() {
-        return burpplepromotionImage;
+    public String getBurppleguideImage() {
+        return burppleguideImage;
     }
 
-    public String getBurpplepromotionTitle() {
-        return burpplepromotionTitle;
+    public String getBurppleguideTitle() {
+        return burppleguideTitle;
     }
 
-    public String getBurpplepromotionUntil() {
-        return burpplepromotionUntil;
+    public String getBurppleguideDesc() {
+        return burppleguideDesc;
     }
-
-    public BurpplePromotionShopVO getBurpplePromotionShop() {
-        return burpplePromotionShop;
-    }
-
-    public Boolean getIsburppleExclusive() {
-        return isburppleExclusive;
-    }
-
-    public List<String> getBurpplepromotionTerm() {
-        return burpplepromotionTerm;
-    }
-
-
 }
 
 

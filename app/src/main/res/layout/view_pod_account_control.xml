@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xyz.waiphyoag.padc_3_f_wpa_burpple_food_places.viewpods.AccountControlViewPod xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/navigation_background_height">
+
+    <include
+        android:id="@+id/view_pod_login_user"
+        layout="@layout/view_pod_login_user"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <include
+        android:id="@+id/view_pod_before_login"
+        layout="@layout/view_pod_before_login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</xyz.waiphyoag.padc_3_f_wpa_burpple_food_places.viewpods.AccountControlViewPod>

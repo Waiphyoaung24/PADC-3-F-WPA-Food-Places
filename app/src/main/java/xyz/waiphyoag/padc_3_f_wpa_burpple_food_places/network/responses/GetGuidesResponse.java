@@ -13,7 +13,7 @@ public class GetGuidesResponse {
     private String message;
     private String apiVersion;
     private String page;
-    private List<GetGuidedVO>promotions;
+    private List<GetGuidedVO>featured;
 
     public int getCode() {
         return code;
@@ -31,7 +31,7 @@ public class GetGuidesResponse {
         return page;
     }
 
-    public List<GetGuidedVO> getPromotions() {
-        return promotions;
+    public List<GetGuidedVO> getGuides() {
+        return featured;
     }
 }

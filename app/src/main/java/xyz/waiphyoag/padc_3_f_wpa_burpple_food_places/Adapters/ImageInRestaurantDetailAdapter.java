@@ -7,6 +7,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import xyz.waiphyoag.padc_3_f_wpa_burpple_food_places.Data.vo.GetFeaturedVO;
+import xyz.waiphyoag.padc_3_f_wpa_burpple_food_places.Data.vo.GetGuidedVO;
 import xyz.waiphyoag.padc_3_f_wpa_burpple_food_places.viewitems.ImageViewItem;
 import xyz.waiphyoag.padc_3_f_wpa_burpple_food_places.R;
 
@@ -15,9 +20,14 @@ import xyz.waiphyoag.padc_3_f_wpa_burpple_food_places.R;
  */
 
 public class ImageInRestaurantDetailAdapter extends PagerAdapter {
+    private List<GetFeaturedVO>mImages;
+    public ImageInRestaurantDetailAdapter()
+    {
+        this.mImages=new ArrayList<>();
+    }
     @Override
     public int getCount() {
-        return 5;
+        return mImages.size();
     }
 
     @Override
@@ -31,12 +41,18 @@ public class ImageInRestaurantDetailAdapter extends PagerAdapter {
         Context context=container.getContext();
         LayoutInflater layoutInflater=LayoutInflater.from(context);
         ImageViewItem view=(ImageViewItem)layoutInflater.inflate(R.layout.item_restaurant_images,container,false);
+        view.setData(mImages.get(position));
         container.addView(view);
         return view;
     }
 
     @Override
     public void destroyItem(@NonNull ViewGroup container, int position, @NonNull Object object) {
-        container.removeView((View)object);
+        container.removeView((View) object);
+    }
+    public void setFeatures(List<GetFeaturedVO> features)
+    {
+        mImages=features;
+        notifyDataSetChanged();
     }
 }

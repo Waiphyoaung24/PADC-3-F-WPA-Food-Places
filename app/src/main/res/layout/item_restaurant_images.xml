@@ -2,7 +2,6 @@
 <xyz.waiphyoag.padc_3_f_wpa_burpple_food_places.viewitems.ImageViewItem xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-
     android:layout_height="match_parent">
 
     <RelativeLayout
@@ -13,40 +12,58 @@
             android:id="@+id/iv_restaurant_images"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:foreground="@android:drawable/screen_background_dark_transparent"
             android:scaleType="centerCrop"
-            android:src="@drawable/img_dummy_food" />
+            android:src="@drawable/img_dummy_food"
+            android:tint="#6F000000" />
 
         <TextView
-            android:id="@+id/tv_featured_text_short"
+            android:id="@+id/tv_featured_tag"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
             android:background="@android:color/background_dark"
             android:fontFamily="serif-monospace"
             android:paddingLeft="8dp"
             android:paddingRight="8dp"
+            android:layout_marginTop="150dp"
+            android:layout_centerHorizontal="true"
             android:text="Featured"
             android:textAllCaps="true"
             android:textColor="@color/primary"
             android:textSize="18sp" />
 
         <TextView
-            android:id="@+id/tv_featured_highlight"
+            android:id="@+id/tv_restaurant_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_below="@id/tv_featured_tag"
+            android:layout_centerHorizontal="true"
             android:fontFamily="serif-monospace"
-            android:layout_below="@id/tv_featured_text_short"
-            android:layout_marginTop="170dp"
-            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
             android:text="Hawker Highlights"
             android:textAllCaps="true"
-            android:textStyle="bold"
             android:textColor="@color/white_full"
             android:textSize="30sp"
+            android:textStyle="bold"
 
 
             />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Good For Health"
+            android:textSize="25sp"
+            android:textColor="@color/white_full"
+            android:textStyle="italic|bold"
+            android:fontFamily="serif-monospace"
+            android:layout_below="@id/tv_restaurant_title"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            style="@style/white_text_black_border"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/tv_feature_desc"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"/>
     </RelativeLayout>
 
 </xyz.waiphyoag.padc_3_f_wpa_burpple_food_places.viewitems.ImageViewItem>

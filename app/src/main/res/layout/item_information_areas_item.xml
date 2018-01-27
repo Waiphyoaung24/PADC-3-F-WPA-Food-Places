@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/img_nearby_shop1"
+        android:layout_below="@id/tv_headline"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/iv_shop1"
+        android:background="@drawable/rounded_button"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/iv_shop1"
+        android:layout_below="@id/tv_headline"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:id="@+id/tv_shop_name"
+        android:text="Uncle Tetsu"
+        android:textSize="13sp"
+        android:textColor="@color/primary_text"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/iv_shop1"
+        android:layout_below="@id/tv_shop_name"
+        android:text="Far Away"
+        android:layout_marginLeft="15dp"
+        android:id="@+id/tv_shop_status"
+        android:textColor="@color/primary_text"
+        android:textSize="10sp"
+        android:alpha="0.5"
+        />
+
+
+
+</RelativeLayout>

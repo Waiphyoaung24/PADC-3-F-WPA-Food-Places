@@ -1,19 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_marginLeft="10dp">
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+        <ImageView
+            android:id="@+id/iv_guide_image"
+            android:layout_width="170dp"
+            android:layout_height="190dp"
+            android:foreground="@android:drawable/screen_background_dark_transparent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_gudie_food" />
+
+        <TextView
+            android:id="@+id/tv_guide_title"
+            style="@style/white_text_black_border"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginRight="8dp"
+            android:fontFamily="serif-monospace"
+            android:gravity="center"
+            android:text="Best Hawker In China Town"
+            android:textColor="@color/white_full"
+            android:textSize="17sp"
+            android:textStyle="italic|bold" />
+
+        <ImageView
+            android:layout_width="110dp"
+            android:layout_height="20dp"
+            android:layout_below="@id/tv_guide_title"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="8dp"
+            android:alpha="0.4"
+            android:layout_centerHorizontal="true"
+            android:foreground="@android:drawable/screen_background_dark_transparent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_burpple_logo_new"
+
+            />
 
     </RelativeLayout>
-
-    <ImageView
-        android:layout_width="250dp"
-        android:layout_height="190dp"
-        android:src="@drawable/img_dummy_burpple"
-        android:scaleType="centerCrop"/>
 
 </android.support.design.widget.CoordinatorLayout>

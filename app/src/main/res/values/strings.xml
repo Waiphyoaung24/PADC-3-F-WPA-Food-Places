@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">PADC-3-F-WPA-Burpple-Food-Places</string>
+    <string name="lbl_logout">Logout</string>
+    <string name="lbl_remember_me">Remember Me</string>
+    <string name="lbl_forgot_password">Forgot Password?</string>
+    <string name="lbl_create_new_account">Create a new account </string>
+    <string name="lbl_register_form">Register Form</string>
+    <string name="lbl_first_name">First Name</string>
+    <string name="lbl_second_name">Second Name</string>
+    <string name="lbl_mail">Mail@example.com</string>
+    <string name="lbl_phone_number">Please Enter A Phone Number</string>
+    <string name="lbl_password">Password</string>
+    <string name="lbl_confirm_passowrd">Confirm Password</string>
+    <string name="lbl_agree_to">I agree to Terms and Privacy Policy </string>
+
 </resources>

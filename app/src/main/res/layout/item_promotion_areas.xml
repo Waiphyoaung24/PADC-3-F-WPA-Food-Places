@@ -2,15 +2,15 @@
 <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_marginLeft="4dp"   >
+    android:layout_marginLeft="8dp"   >
     
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
         
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="170dp"
+            android:layout_height="180dp"
             android:src="@drawable/img_promotion_foods"
             android:scaleType="centerCrop"
             android:alpha="0.8"
@@ -22,39 +22,40 @@
             android:text="BURPPLE EXCLUSIVE"
             android:textColor="@color/white_full"
             android:padding="8dp"
-            android:layout_marginLeft="30dp"
+            android:layout_marginLeft="8dp"
             android:layout_marginTop="30dp"
             />
         <TextView
-            android:layout_width="210dp"
+            android:layout_width="160dp"
             android:layout_height="wrap_content"
             android:text="1 For 1 Chicken And Rice"
             android:textColor="@color/white_full"
-            android:textSize="20sp"
+            android:textSize="14sp"
             android:id="@+id/tv_promotion_title"
             android:textStyle="bold"
-            android:layout_marginLeft="30dp"
+            android:layout_marginLeft="4dp"
             android:layout_marginTop="70dp"
             />
         <View
-            android:layout_width="250dp"
+            android:layout_width="150dp"
             android:layout_height="1dp"
             android:layout_marginLeft="18dp"
             android:background="@color/white_full"
             android:layout_marginTop="130dp"
             android:id="@+id/v_view"/>
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:text="TILL 31st JAN'18"
             android:textColor="@color/white_full"
             android:layout_below="@id/v_view"
             android:layout_marginLeft="18dp"
             android:layout_marginTop="8dp"
+            style="@style/white_text_black_border"
             android:id="@+id/tv_promotion_until"
             />
         <LinearLayout
-            android:layout_width="256dp"
+            android:layout_width="170dp"
             android:layout_height="50dp"
             android:layout_below="@id/iv_promoted_food"
             android:orientation="vertical">
@@ -73,6 +74,7 @@
                 android:layout_height="match_parent"
                 android:text="Kent Ridge"
                 android:alpha="0.8"
+                android:layout_marginBottom="8dp"
                 android:id="@+id/tv_promotion_restaurant_name"
                 android:paddingTop="2dp"
                 android:textColor="@color/white_full"

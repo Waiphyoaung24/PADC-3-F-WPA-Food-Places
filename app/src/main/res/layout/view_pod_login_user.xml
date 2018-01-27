@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xyz.waiphyoag.padc_3_f_wpa_burpple_food_places.viewpods.LoginUserViewPod xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/navigation_background_height"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <ImageView
+        android:id="@+id/iv_cover"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/navigation_background_height"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img_navigation_background" />
+
+    <ImageView
+        android:id="@+id/iv_main_profile"
+        android:layout_width="@dimen/regular_user_profile"
+        android:layout_height="@dimen/regular_user_profile"
+        android:layout_marginBottom="@dimen/margin_medium_2"
+        android:layout_marginLeft="@dimen/margin_medium_2"
+        android:layout_marginRight="@dimen/margin_medium_2"
+        android:layout_marginTop="@dimen/margin_xlarge"
+        android:scaleType="centerCrop"
+        android:src="@drawable/dummy_user_picture" />
+
+    <ImageView
+        android:id="@+id/second_user_picture"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="@dimen/margin_xxlarge"
+        android:src="@drawable/dummy_user_picture" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="@dimen/margin_xxlarge"
+        android:layout_toLeftOf="@+id/second_user_picture"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img_google_logo" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        style="@style/white_text_black_border"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_main_profile"
+        android:layout_marginLeft="@dimen/margin_medium_2"
+        android:fontFamily="serif"
+        android:text="Wai Phyo Aung"
+        android:textColor="@color/white_full"
+        android:textSize="@dimen/text_regular"
+        android:textStyle="bold"
+
+        />
+
+    <TextView
+        android:id="@+id/tv_phone_number"
+        style="@style/white_text_black_border"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_name"
+        android:layout_marginLeft="@dimen/margin_medium_2"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:fontFamily="serif"
+        android:text="+9599-7353411"
+        android:textColor="@color/white_full"
+        android:textSize="@dimen/text_regular"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_logout"
+        style="@style/accent_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/margin_medium_2"
+        android:text="@string/lbl_logout"
+        android:textAllCaps="false" />
+
+
+</xyz.waiphyoag.padc_3_f_wpa_burpple_food_places.viewpods.LoginUserViewPod>
+
+
